@@ -1,0 +1,16 @@
+header {
+    border-top: double;
+    border-bottom: double;
+    border-left: double;
+    border-right: double;
+    border-color: rgba(187, 158, 220, 0.2);
+    border-radius: 10px;
+}
+
+button {
+    display: none;
+}
+
+.teleoperatrice {
+    page-break-before:always
+}
