@@ -21,7 +21,7 @@ header {
     flex-direction: column;
     flex-wrap: wrap;    
     align-content: center;
-    background-image: url(../cv_n_g/background_header.svg);
+    background-image: url(background_header.svg);
     background-repeat: no-repeat;
     border-top: double;
     border-bottom: double;
