@@ -25,8 +25,14 @@ header {
     background-repeat: no-repeat;
     border-top: double;
     border-bottom: double;
-    border-color: rgba(187, 158, 220, 0.2)
+    border-color: rgba(187, 158, 220, 0.2);
+}
 
+button {
+    background-color: rgba(187, 158, 220, 0.2);
+    border-radius: 5px;
+    border-color: rgba(187, 158, 220, 0.5);
+    border: outset;
 }
 
 div.contact>p>a>img {
