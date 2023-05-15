@@ -6,97 +6,172 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="noindex, follow">
         <title>Najima GUERMOUDI</title>
-        <link rel="stylesheet" href="cv.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">        
+        <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" media="print" href="cv_print.css">
+        <script src="main.js" defer></script>
     </head>
     <body>
-        <header>
-            <div class="identite">
-                <h1>Najima GUERMOUDI</h1>
-                <div class="complement">
-                    <div class="contact">
-                        <p>3 rue Lulier<br>25000 Besançon</p>
-                        <p><a href="mailto:najima.guermoudi@gmail.com">najima.guermoudi@gmail.com</a><br><a href="tel:+33635491860">06 35 49 18 60</a><br>
-                            <a href="https://www.linkedin.com/in/n-guer/" target="_blank">
-                            <img src="https://freesvg.org/img/linkedin.png" alt="logo LinkedIn" title="lien vers le profil LinkedIn de Najima GUERMOUDI"></a><br>
-                            <button onclick="print('body');">Imprimer</button>
-                        </p>
-                    </div>
+        <div id="view">
+            <header class="top">
+                <div class="header-top-left">
+                    <h1>Najima</h1>
+                    <p>Développeuse Full-stack</p>
                 </div>
-            </div>
-            <div class="presentation">
-                <p>Apr&egrave;s plus de 10 ann&eacute;es de polyvalence administrative, je m'oriente vers le secteur num&eacute;rique.</p>
-                <p>Actuellement en formation, je pose les premi&egrave;res pierres d'une future carrière en d&eacute;veloppement web.</p>
-            </div>
-        </header>
-        <main>
-            <div class="left">
-                <div class="parcours">
-                    <h2>Dipl&ocirc;mes et certifications</h2>
-                    <ul>
-                        <li>2023 Certification TOSA Excel (813)</li>
-                        <li>2023 Certification Cl&eacute;A Num&eacute;rique</li>
-                        <li>2016 Concours interne SNCF, grade agent de ma&icirc;trise</li>
-                        <li>2004 Baccalaur&eacute;at litt&eacute;raire section europ&eacute;enne (mention AB, mention europ&eacute;enne allemand)</li>
+                <div class="header-top-right">
+                    <ul class="menu">
+                        <li>
+                            <a href="#competences">Compétences</a>
+                        </li>
+                        <li>
+                            <a href="#experience">Expérience</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Me contacter</a>
+                        </li>
                     </ul>
                 </div>
-                <div class="developpementpro">
-                    <h2>D&eacute;veloppement professionnel</h2>
-                    <ul>
-                        <li>2023 Pr&eacute;paration du titre professionnel de D&eacute;veloppeuse Full Stack</li>
-                        <li>2023 Stage d'immersion au sein de D&eacute;butant-e AccepT, Besan&ccedil;on</li>
-                        <li>2023 MOOC L'essentiel des CSS, plateforme LinkedIn Learning<br><a href="https://lnkd.in/dMb3xjBf" target="_blank">Voir le certificat</a></li>
-                        <li>2023 MOOC L'essentiel du HTML5, plateforme LinkedIn Learning<br><a href="https://www.linkedin.com/learning/certificates/8980b5425484374b61e60bdc257ee128151e57d223fc77a61e3d3b8319e3318d" target="_blank">Voir le certificat</a></li>
-                    </ul>
+                <div class="header-right" class="presentation">
+                    <p>Après 15 années de polyvalence administrative et commerciale, je m'oriente vers le développement web.</p>
+                    <div>
+                        <p class="animation">En formation depuis avril, je recherche un stage non rémunéré pour la période du 7 novembre au 22 décembre 2023.</p>   
+                        <button class="print" onclick="print('body');">Imprimer</button> 
+                    </div>                    
                 </div>
-                <div class="interest">
-                    <h2>Centres d'int&eacute;r&ecirc;t</h2>
-                    <div class="icons">
-                        <img src="https://cdn-icons-png.flaticon.com/512/1657/1657265.png" alt="symboles de marteau et cl&eacute; à molette" title="bricolage"><img src="https://cdn-icons-png.flaticon.com/512/2283/2283333.png" alt="personnage en randonn&eacute;e" title="randonn&eacute;e"><img src="https://cdn-icons-png.flaticon.com/512/6915/6915422.png" alt="empreinte de coussinet dessin&eacute;e dans un coeur entre deux mains" title="protection animale"> <img src="https://cdn-icons-png.flaticon.com/512/5151/5151290.png" alt="femme soulevant des halt&egrave;res" title="halt&eacute;rophilie"> <img src="https://cdn-icons-png.flaticon.com/512/1065/1065711.png" alt="cul-de-poule contenant une pr&eacute;paration culinaire" title="cuisine">
+                <img class="header-left" src="assets/photo_naj.webp" width="490" height="653" alt="">
+            </header>
+            <main>
+                <div class="skills-container">
+                    <h2>Compétences</h2>
+                    <div class="competences">
+                        <div class="currently">
+                            <h4>Apprentissage en cours</h4>
+                            <div class="skills">
+                                <p>HTML</p>
+                                <progress value="60" max="100">
+                                    <div pseudo="webkit-progress-inner-element">
+                                        <div pseudo="webkit-progress-bar">
+                                            <div pseudo="webkit-progress-value"></div>
+                                        </div>
+                                    </div>
+                                </progress>
+                            </div>
+                            <div class="skills">
+                                <p>CSS</p>
+                                <progress value="50" max="100">
+                                    <div pseudo="webkit-progress-inner-element">
+                                        <div pseudo="webkit-progress-bar">
+                                            <div pseudo="webkit-progress-value"></div>
+                                        </div>
+                                    </div>
+                                </progress>
+                            </div>
+                            <div class="skills">
+                                <p>JavaScript</p>
+                                <progress value="20" max="100">
+                                    <div pseudo="webkit-progress-inner-element">
+                                        <div pseudo="webkit-progress-bar">
+                                            <div pseudo="webkit-progress-value"></div>
+                                        </div>
+                                    </div>
+                                </progress>
+                            </div>
+                        </div>
+                        <div class="planned">
+                            <div class="skills">
+                                <h4>C'est au programme !</h4>
+                                <p>MySQL</p>
+                                <progress value="0" max="100">
+                                    <div pseudo="webkit-progress-inner-element">
+                                        <div pseudo="webkit-progress-bar">
+                                            <div pseudo="webkit-progress-value"></div>
+                                        </div>
+                                    </div>
+                                </progress>
+                            </div>
+                            <div class="skills">
+                                <p>PHP</p>
+                                <progress value="0" max="100">
+                                    <div pseudo="webkit-progress-inner-element">
+                                        <div pseudo="webkit-progress-bar">
+                                            <div pseudo="webkit-progress-value"></div>
+                                        </div>
+                                    </div>
+                                </progress>
+                            </div>
+                            <div class="skills">
+                                <p>Gestion de projet</p>
+                                <progress value="0" max="100">
+                                    <div pseudo="webkit-progress-inner-element">
+                                        <div pseudo="webkit-progress-bar">
+                                            <div pseudo="webkit-progress-value"></div>
+                                        </div>
+                                    </div>
+                                </progress>
+                            </div>
+                        </div>
                     </div>
-                </div>      
-            </div>
-            <div class="right">
+                </div>
+                <div class="formation-container">
+                    <h2>Formation</h2>
+                    <div class="formation">
+                        <div>
+                            <h3>Développement Full Stack</h3>
+                            <p>Titre professionnel en préparation</p>
+                        </div>
+                        <div>
+                            <h3>Immersion</h3>
+                            <p>Découverte métier avec l'équipe de <a href="https://www.debutant-e.pro/">Débutant-e AccepT</a></p>
+                        </div>
+                        <div>
+                            <h3>Autoformation</h3>
+                            <p>Les bases, <a href="https://www.linkedin.com/learning/certificates/8980b5425484374b61e60bdc257ee128151e57d223fc77a61e3d3b8319e3318d" target="_blank">HTML5</a> et <a href="https://lnkd.in/dMb3xjBf" target="_blank">CSS3</a>, linkedIn Learning</p></p>
+                        </div>
+                        <div>
+                            <h3>TOSA Excel</h3>
+                            <p>et CléA Numérique</p>
+                        </div>
+                        <div>
+                            <h3>Certification</h3>
+                            <p>Conseil en naturopathie et rééquilibrage alimentaire</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="experiences">
-                    <h2>Exp&eacute;riences professionnelles</h2>
-                    <div class="tgm">
-                        <h3 class="poste">Gestionnaire de moyens de Production</h3>
-                        <p class="lieu">2018 - 2021 SNCF Mobilit&eacute;s, Centre Op&eacute;rationnel de Paris Austerlitz SNCF</p>
-                        <ul class="missions">
-                            <li>Planification et saisie des missions des conducteurs</li>
-                            <li>Gestion d'&eacute;quipes de 6 à 8 conducteurs, adaptation op&eacute;rationnelle des ressources humaines</li>
-                            <li>Veille et adaptation op&eacute;rationnelle des ressources mat&eacute;rielles</li>
-                        </ul>
+                    <h2>précédemment</h2>
+                    <div id="tgm">
+                        <h4 class="poste">Gestion de Moyens - ressources humaines et matérielles / Service commercial - contact clients</h4>
+                        <p class="peu"><a href="https://www.sncf.com/fr/sncf-voyageurs"><img src="assets/Logo_SNCF.svg" width="87" height="45" alt="logo du groupe SNCF"></a></p>
                     </div>
-                    <div class="ascvg">
-                        <h3 class="poste">Agent du service commercial </h3>
-                        <p class="lieu">2012 - 2018 SNCF Mobilit&eacute;s, Vall&eacute;e de l'Orge, Essonne</p>
-                        <ul class="missions">
-                            <li>Accueil, information et vente de billets de train</li>
-                            <li>Maintenance de premier niveau des &eacute;quipements de gares</li>
-                            <li>R&eacute;daction de rapports d'incidents et accidents</li>
-                        </ul>
+                    <div class="commerciale">
+                        <h4>Animation commerciale - produits informatiques et multimedia</h4>
+                        <p class="peu"><a href="https://atmospheres.tm.fr/"><img src="assets/atmospheres-blanc.png" width="220" height="42" alt=""></a> <a href="https://www.cpm-int.com/fr/"><img src="assets/CPM_Logo Primary_Black.png" width="150" height="38" alt=""></a> <a href="https://agence-impact.com/fr/"><img src="assets/logo-impact.png" width="140" height="45" alt=""></a></p>
                     </div>
                     <div class="teleoperatrice">
-                        <h3>Op&eacute;ratrice service Client&egrave;le</h3>
-                        <p class="lieu">2011 Playmobil France, Lisses, Essonne</p>
-                        <ul class="missions">
-                            <li>Accueil t&eacute;l&eacute;phonique</li>
-                            <li>Enregistrement et mise à jour de fichiers client</li>
-                            <li>Traitement des demandes SAV</li>
-                        </ul>
-                    </div>
-                    <div class="animation">
-                        <h3>Animatrice commerciale</h3>
-                        <p class="lieu">2009 - 2011, agences @tmospheres, CPM France, Impact Sales & Marketing</p>
-                        <ul class="missions">
-                            <li>Pr&eacute;sentation et d&eacute;monstration de produits multimedia en GMS et magasins sp&eacute;cialis&eacute;s</li>
-                            <li>Propositions de produits adapt&eacute;s aux besoins de clients</li>
-                            <li>Compte-rendus d'animation</li>
-                        </ul>
+                        <h4>Service Clientèle - après-vente et fichiers clients</h4>
+                        <p class="peu"><a href="https://www.playmobil.fr/"><img src="assets/logo_playmobil.svg" width="103" height="40" alt=""></a></p>
                     </div>
                 </div>
-            </div>
-        </main>
+                <div id="contact">
+                    <h2>contact</h2>
+                    <div class="contact">
+                        <div class="mail">
+                            <img src="assets/path4466.svg" width="40" height="40"  alt="">
+                            <a href="mailto:najima.guermoudi@gmail.com">najima.guermoudi@gmail.com</a>
+                        </div>
+                        <div class="phone">
+                            <img src="assets/icon-tel-v.svg" alt="" width="40" height="40">
+                            <a href="tel:+33635491860">06 35 49 18 60</a>
+                        </div>
+                        <div class="network">
+                            <img src="assets/Path_2520.svg" width="40" height="40" alt="">
+                            <a href="https://www.linkedin.com/in/n-guer/" target="_blank">Lien vers le profil LinkedIn</a>
+                        </div>
+                    </div>
+                </div>    
+            </main>
+        </div>
     </body>
 </html>
