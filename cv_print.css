@@ -7,10 +7,61 @@ header {
     border-radius: 10px;
 }
 
-button {
+.print-button {
     display: none;
 }
 
-.teleoperatrice {
+main {
+    padding: 0;
+}
+
+h1, h2 {
+    color: initial;
+}
+
+ul {
+    display: none;
+}
+
+ul>li {
+    color: initial;
+}
+
+.animation {
+    font-size: 1rem;
+}
+
+
+.print {
+    display: block;
+}
+
+.peu {
+    display: none;
+}
+
+.formation-container {
     page-break-before:always
 }
+
+.contact>div>div.print {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact>.network>a, .contact>.github>a {
+    display: none;
+}
+
+.progress-bar {
+    display: none;
+}
+
+
