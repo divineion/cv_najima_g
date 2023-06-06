@@ -1,3 +1,7 @@
+#view {
+    padding-bottom: 0;
+}
+
 header {
     border-top: double;
     border-bottom: double;
@@ -17,6 +21,14 @@ main {
 
 h1, h2 {
     color: initial;
+}
+
+h2 {
+    margin-bottom: 1.875rem;
+}
+
+.experiences>div {
+    padding: 20px 0 0 0;
 }
 
 ul {
@@ -64,4 +76,7 @@ ul>li {
     display: none;
 }
 
+.formation>div:not(:first-of-type)>h3::before {
+    display: none;
+}
 

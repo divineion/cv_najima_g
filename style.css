@@ -35,10 +35,7 @@ a {
 }
 
 .experiences, .interest, #contact, .skills-container, .formation-container {
-    padding-left: 0;
-    padding-right: 0;
-    padding: 1.5625rem 0;
-
+    padding: 1.25rem 0;
 }
 
 .competences {
@@ -248,7 +245,7 @@ h1 {
     font-size: 2rem;
     text-transform: uppercase;
     max-width: max-content;
-    /* color: white; */
+    color: white;
 }
 
 h1>span {
