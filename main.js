@@ -26,7 +26,7 @@ function isInViewport(element) {
 
 function updateProgressBar() {
   const progressBars = document.querySelectorAll(".progress");
-  const progressValues = [70, 50, 30, 20, 0, 0, 0];
+  const progressValues = [70, 50, 30, 20, 20, 0, 0, 0, 0, 0];
   for (let i = 0; i < progressBars.length; i++) {
     const progressBar = progressBars[i];
     if (isInViewport(progressBar)) {
