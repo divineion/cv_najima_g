@@ -1,31 +1,31 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import AppFooter from './components/AppFooter.vue'
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
+    <img alt="logo" class="logo" src="./assets/android-chrome-512x512.png" width="125" height="125" />
+    
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/src/views/Presentation.vue">Qui suis-je ?</RouterLink>
-        <RouterLink to="/src/views/Formation.vue">Formation</RouterLink>
-        <RouterLink to="/src/views/Experience.vue">Expérience</RouterLink>
-        <RouterLink to="/src/views/Skills.vue">Compétences</RouterLink>
-        <RouterLink to="/src/views/Contact.vue">Contact</RouterLink>
+        <RouterLink to="/Presentation">Qui suis-je ?</RouterLink>
+        <RouterLink to="/Formation">Formation</RouterLink>
+        <RouterLink to="/Experience">Expérience</RouterLink>
+        <RouterLink to="/Skills">Compétences</RouterLink>
+        <RouterLink to="/Contact">Contact</RouterLink>
       </nav>
     </div>
   </header>
 
+
   <RouterView />
+  <AppFooter/>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -87,4 +87,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->

@@ -5,6 +5,6 @@ import AppHeader from '../components/AppHeader.vue';
 
 <template>
   <main>
-    <AppHeader msg='here iz your en-tête' />
+
   </main>
 </template>
