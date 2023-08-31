@@ -1,6 +1,6 @@
 <template>
     <main>
-        <img src="src\assets\calculator.png" width="784" height="370">
+        <img src="src/assets/images/calculator.png" width="784" height="370">
     </main>
 </template>
 
