@@ -1,15 +1,12 @@
 <script setup>
-import ContactForm from '../components/ContactForm.vue';
-import AppHeader from '../components/AppHeader.vue';
-
+  import ContactForm from '../components/ContactForm.vue';
+import Formation from './Formation.vue';
 </script>
 
 <template>
-<main>
-<ContactForm/>
-</main>
-
-
+  <main>
+    <ContactForm/>
+  </main>
 </template>
 
 <style>

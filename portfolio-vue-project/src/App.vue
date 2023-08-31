@@ -1,28 +1,26 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import AppFooter from './components/AppFooter.vue'
+import Appfooter from './components/appfooter.vue';
+
 </script>
 
 <template>
   <header>
     <img alt="logo" class="logo" src="./assets/android-chrome-512x512.png" width="125" height="125" />
-    
     <div class="wrapper">
-
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/Presentation">Qui suis-je ?</RouterLink>
         <RouterLink to="/Formation">Formation</RouterLink>
         <RouterLink to="/Experience">Expérience</RouterLink>
         <RouterLink to="/Skills">Compétences</RouterLink>
+        <RouterLink to="/Portfolio">Portfolio</RouterLink>
         <RouterLink to="/Contact">Contact</RouterLink>
       </nav>
     </div>
   </header>
-
-
   <RouterView />
-  <AppFooter/>
+  <Appfooter/>
 </template>
 
 <!-- <style scoped>
@@ -87,4 +85,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style> -->
+</style>  -->

@@ -1,12 +1,10 @@
-<script>
-import AppHeader from '../components/AppHeader.vue';
-import AppFooter from '../components/AppFooter.vue';
-
+<script setup>
+    import Formation from '../components/Formation.vue';
 </script>
 
 <template>
     <main>
-
+<Formation/>
         
     </main>
 </template>
