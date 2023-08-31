@@ -1,7 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: http://localhost:5173");
-header("Access-Control-Allow-Methods: POST, OPTIONS"); // Include the HTTP methods you want to allow
-header("Access-Control-Allow-Headers: Content-Type"); // Include any additional headers you want to allow
+header("Access-Control-Allow-Methods: POST, OPTIONS"); 
+header("Access-Control-Allow-Headers: Content-Type"); 
 
 require '../config.php';
 
@@ -26,10 +26,6 @@ use PHPMailer\PHPMailer\Exception;
         $firstname = $postData->firstname;
         $useremail = $postData->email;
         $message = $postData->message;
-        echo $username;
-        echo $useremail;
-
-
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -67,7 +63,7 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'Contact depuis votre site';
-    $mail->Body    = 'bodytest';
+    $mail->Body    = $message;
     //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
