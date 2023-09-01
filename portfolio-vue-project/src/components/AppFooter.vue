@@ -1,17 +1,16 @@
 <template>
-    <main>
   <div id="contact">
       <div class="contact">
           <div class="mail">
-              <a href="mailto:najima.guermoudi@gmail.com"><img src="../assets/images/path4466.svg" width="40" height="40"  alt=""></a>
+              <a href="mailto:najima.guermoudi@gmail.com"><img src="../assets/images/path4466.svg" width="40" height="40"  alt="icône d'e-mail"></a>
           </div>
           <div class="phone">
-              <a href="tel:+33635491860"><img src="../assets/images/icon-tel-v.svg" alt="" width="40" height="40"></a>
+              <a href="tel:+33635491860"><img src="../assets/images/icon-tel-v.svg" alt="icône de téléphone" width="40" height="40"></a>
           </div>
           <div class="network">
-              <a href="https://www.linkedin.com/in/n-guer/" target="_blank"><img src="../assets/images/Path_2520.svg" width="40" height="40" alt=""></a>
+              <a href="https://www.linkedin.com/in/n-guer/" target="_blank"><img src="../assets/images/Path_2520.svg" width="40" height="40" alt="logo LinkedIn "></a>
               <div class="print">
-                  <img src="../assets/images/Path_2520.svg" width="40" height="40" alt=""><p>linkedin.com/in/n-guer/</p>
+                  <img src="../assets/images/Path_2520.svg" width="40" height="40" alt="logo Githuby"><p>linkedin.com/in/n-guer/</p>
               </div>
           </div>
           <div class="github">
@@ -22,7 +21,6 @@
           </div>
       </div>
   </div>
-</main>
 </template>
 
 <style>

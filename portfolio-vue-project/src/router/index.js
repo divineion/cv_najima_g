@@ -21,37 +21,37 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
 
     {
-      path: '/contact',
+      path: '/Contact',
       name: 'contact',
       component: () => import('../views/Contact.vue')
     },
     {
-      path: '/experience',
+      path: '/Experience',
       name: 'experience',
       component: () => import('../views/Experience.vue')
     },
     {
-      path: '/skills',
+      path: '/Skills',
       name: 'competences',
       component: () => import('../views/Skills.vue')
     },
     {
-      path: '/portfolio',
+      path: '/Portfolio',
       name: 'portfolio',
       component: () => import('../views/Portfolio.vue')
     },
     {
-      path: '/presentation',
+      path: '/Presentation',
       name: 'presentation',
       component: () => import('../views/Presentation.vue')
     },
     {
-      path: '/formation',
+      path: '/Formation',
       name: 'formation',
       component: () => import('../views/Formation.vue')
     },
     {
-      path: '/parcours',
+      path: '/Parcours',
       name: 'parcours',
       component: () => import('../views/Parcours.vue')
     }

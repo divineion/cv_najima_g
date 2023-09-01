@@ -18,8 +18,14 @@ import AppFooter from './components/AppFooter.vue';
       </nav>
     </div>
   </header>
-  <RouterView />
+  
+  <main>
+    <RouterView />
+  </main>
+
+<footer>
   <AppFooter/>
+</footer>
 </template>
 
 <!-- <style scoped>

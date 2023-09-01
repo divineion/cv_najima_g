@@ -3,10 +3,7 @@
 </script>
 
 <template>
-    <main>
-<Formation/>
-        
-    </main>
+<Formation/>     
 </template>
 
 <style>

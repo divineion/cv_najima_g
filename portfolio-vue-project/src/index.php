@@ -13,6 +13,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
+
     // récupérer les data d'axios
     $postData = file_get_contents('php://input');
 
@@ -29,7 +30,7 @@ $mail = new PHPMailer(true);
 
 try {
     //Paramétrage du serveur SMTP
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
+    $mail->SMTPDebug = SMTP::DEBUG_OFF;                      //Enable verbose debug output
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'mail.gmx.com';                       //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //SMTP authentication
@@ -49,8 +50,8 @@ try {
     $mail->Subject = 'Contact depuis votre site';
     $mail->Body    = $message;
 
-    $mail->send();
-    if ($mail->send()) {
+    $sent = $mail->send();
+    if ($sent) {
         $response = array(
             'status' => 'success',
             'message' => 'Message sent successfully'
@@ -61,7 +62,8 @@ try {
             'message' => 'Message could not be sent'
         );
     }
-    
+    echo json_encode($response);
+    return;
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
