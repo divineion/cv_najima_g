@@ -6,125 +6,157 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Consultez le CV de Najima GUERMOUDI. Suivez son parcours, de stagiaire à Onlineformapro Besançon aujourd'hui, à développeur web junior demain. ">
         <title>Najima GUERMOUDI</title>
+
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <!--=====================FONT FAMILIES=====================-->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">        
+
+        <!--=====================STYLESHEETS=====================-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" media="print" href="cv_print.css">
         <link rel="stylesheet" href="style-m-375.css">
-        <link rel="stylesheet" href="style-m-862.css">
+        <link rel="stylesheet" media="print" href="cv_print.css">
+
+        <!--=====================SCRIPTS=====================-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <script src="main.js" defer></script>
     </head>
-    <body>
-        <div id="view">
-            <header class="top">
-                <div class="header-top-right">
-                    <ul class="menu">
-                        <li>
-                            <a href="#competences">Compétences</a>
-                        </li>
-                        <li>
-                            <a href="#experience">Expérience</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Me contacter</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header-top-left">
-                    <h1>Najima <span>Développement Full-stack</span></h1>
-                </div>
-                <div class="header-right presentation">
-                    <p>Après 15 années de polyvalence administrative et commerciale, je m'oriente vers le développement web.</p>
-                    <div>
-                        <p class="animation">En formation depuis avril, je recherche un stage non rémunéré pour la période du 6 novembre au 22 décembre 2023.</p>   
-                        <button class="print-button" onclick="print('body');">Imprimer</button> 
-                    </div>                    
-                </div>
-                <img class="header-left" src="assets/photo_naj.webp" width="490" height="653" alt="">
-            </header>
+
+    
+
+
+    <body class="container-fluid">
+       
+        <div id="view" class="component">
+            <!--=================HEADER=============================-->
+            <div class="row">
+                <header class="top">
+                    <div class="row nav-container">
+                        <div class="col-4 header-top-left">
+                            <h1>Najima <span>Développement Full-stack</span></h1>
+                        </div>
+                        <div class=" col-8 header-top-right">
+                            <ul class="nav justify-content-end menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#competences">Compétences</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#experience">Expérience</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Me contacter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row intro-container">
+                        <div class="col-4">
+                            <img class="header-left img-fluid rounded" src="assets/photo_naj.webp" width="490" height="653" alt="">
+                        </div>
+                        <div class="col-8 header-right presentation">
+                            <div class="row">
+                                <p>Après 15 années de polyvalence administrative et commerciale, je m'oriente vers le développement web.</p>
+                            </div>
+                            <div class="row">
+                                <p class="animation">En préparation pour le titre de développeuse Full Stack Javascript prévu en janvier 2024</p>
+                            </div>
+                            <div class="row-cols-6">
+                                <button class="btn print-button" onclick="print('body');">Imprimer</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </header>
+            </div>
+
+            <!--=================MAIN=============================-->
             <main>
-                <div id="competences" class="skills-container">
+                <!-- START COMPETENCES -->
+                <div id="competences" class="row skills-container bg-light">
                     <h2>Compétences</h2>
-                    <div class="competences">    
-                        <div class="currently">
+                    <div class="competences d-flex">    
+                        <div class="currently w-100">
                             <h3>Apprentissage en cours</h3>
-                            <div class="skills">
-                                <h4>HTML</h4>
+                            <div class="skills row-cols-2">
+                                <h4>HTML/CSS</h4>
                                 <div class="progress-bar">
                                     <div class="progress html">  
                                     </div>
                                 </div>
                             </div>
-                            <div class="skills">
-                                <h4>CSS</h4>
-                                <div class="progress-bar">
-                                    <div class="progress css">  
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skills">
+                           
+                            <div class="skills row-cols-2">
                                 <h4>JavaScript</h4>
                                 <div class="progress-bar">
                                     <div class="progress javascript">  
                                     </div>
                                 </div>
                             </div>
-                            <div class="skills">
-                                <h4>Wordpress</h4>
-                                <div class="progress-bar">
-                                    <div class="progress seo">  
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skills">
-                                <h4>SEO</h4>
-                                <div class="progress-bar">
-                                    <div class="progress seo">  
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="planned">
-                            <h3>C'est au programme !</h3>
-                            <div class="skills">
-                                <h4>Node.js</h4>
-                                <div class="progress-bar">
-                                    <div class="progress php">  
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skills">
+
+                            <div class="skills row-cols-2">
                                 <h4>MySQL</h4>
                                 <div class="progress-bar">
                                     <div class="progress mysql">  
                                     </div>
                                 </div>
                             </div>
-                            <div class="skills">
+
+                            <div class="skills row-cols-2">
                                 <h4>PHP</h4>
                                 <div class="progress-bar">
                                     <div class="progress php">  
                                     </div>
                                 </div>
                             </div>
-                            <div class="skills">
+
+                            <!-- <div class="skills row-cols-2">
+                                <h4>Wordpress</h4>
+                                <div class="progress-bar">
+                                    <div class="progress seo">  
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skills row-cols-2">
+                                <h4>SEO</h4>
+                                <div class="progress-bar">
+                                    <div class="progress seo">  
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <div class="skills row-cols-2">
                                 <h4>Figma</h4>
                                 <div class="progress-bar">
                                     <div class="progress maquettage">  
                                     </div>
                                 </div>
                             </div>
-                            <div class="skills">
+                            <div class="skills row-cols-2">
                                 <h4>Gestion de projet</h4>
                                 <div class="progress-bar">
                                     <div class="progress gestion">  
                                     </div>
                                 </div>
                             </div>
+                            <div class="skills row-cols-2">
+                                <h4>Node.js</h4>
+                                <div class="progress-bar">
+                                    <div class="progress php">  
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!--END COMPETENCES-->
+
+                <!-- START FORMATION -->
                 <div class="formation-container">
                     <h2>Formation</h2>
                     <div class="formation">
@@ -150,48 +182,53 @@
                         </div>
                     </div>
                 </div>
+                <!--END FORMATION-->
+
+                <!--START EXPERIENCE-->
                 <div id="experience" class="experiences">
                     <h2>précédemment</h2>
                     <div id="tgm">
                         <h3 class="poste">Gestion de Moyens - ressources humaines et matérielles / Service commercial - contact clients</h3>
-                        <p class="peu"><a href="https://www.sncf.com/fr/sncf-voyageurs"><img src="assets/Logo_SNCF.svg" width="87" height="45" title="logo du groupe SNCF" alt="lettre du sigle SNCF inscrites en blanc sur fond dégradé de rouge à violine"></a></p>
+                        <p class="peu"><a href="https://www.sncf.com/fr/sncf-voyageurs"><img class="img-fluid" src="assets/Logo_SNCF.svg" width="87" height="45" title="logo du groupe SNCF" alt="lettre du sigle SNCF inscrites en blanc sur fond dégradé de rouge à violine"></a></p>
                         <p class="print">Groupe SNCF</p>
                     </div>
                     <div class="commerciale">
                         <h3 class="poste">Animation commerciale - produits informatiques et multimedia</h3>
-                        <p class="peu"><a href="https://atmospheres.tm.fr/"><img src="assets/atmospheres-blanc.png" width="220" height="42" alt="logo de l'agence Atmospheres écrit en toutes lettres en blanc, avec leur devise, 'designer de vos idées', inscrite plus bas en orange"></a> <a href="https://www.cpm-int.com/fr/"><img src="assets/cpm_logo.png" width="150" height="38" alt="les trois lettres CPM inscrites en blanc et soulignées respectivement d'un trait bleu, un trait vert et d'un trait rouge "></a> <a href="https://agence-impact.com/fr/"><img src="assets/logo-impact.png" width="140" height="45" alt="logo représentant les lettres du nom de l'agence Impact, le chiffre 1 en initiale, remplaçant la lettre i, inscrit en transparence dans un carré rouge décalé"></a></p>
+                        <p class="peu"><a href="https://atmospheres.tm.fr/"><img class="img-fluid" src="assets/atmospheres-blanc.png" width="220" height="42" alt="logo de l'agence Atmospheres écrit en toutes lettres en blanc, avec leur devise, 'designer de vos idées', inscrite plus bas en orange"></a> <a href="https://www.cpm-int.com/fr/"><img src="assets/cpm_logo.png" width="150" height="38" alt="les trois lettres CPM inscrites en blanc et soulignées respectivement d'un trait bleu, un trait vert et d'un trait rouge "></a> <a href="https://agence-impact.com/fr/"><img src="assets/logo-impact.png" width="140" height="45" alt="logo représentant les lettres du nom de l'agence Impact, le chiffre 1 en initiale, remplaçant la lettre i, inscrit en transparence dans un carré rouge décalé"></a></p>
                         <p class="print">Agences @tmospheres, CPM France, Impact Sales & Marketing</p>
                     </div>
                     <div class="teleoperatrice">
                         <h3 class="poste">Service Clientèle - après-vente et fichiers clients</h3>
-                        <p class="peu"><a href="https://www.playmobil.fr/"><img src="assets/Playmobil_logo.png" width="103" height="40" alt="inscription de la marque Playmobil en bleu, surplombée du dessin de la tête d'un jouet Playmobil"></a></p>
+                        <p class="peu"><a href="https://www.playmobil.fr/"><img class="img-fluid" src="assets/Playmobil_logo.png" width="103" height="40" alt="inscription de la marque Playmobil en bleu, surplombée du dessin de la tête d'un jouet Playmobil"></a></p>
                         <p class="print">Playmobil France</p>
                     </div>
                 </div>
+                <!--END EXPERIENCE-->
                 <div id="contact">
                     <h2>contact</h2>
                     <div class="contact">
                         <div class="mail">
-                            <a href="mailto:najima.guermoudi@gmail.com"><img src="assets/path4466.svg" width="40" height="40"  alt="">najima.guermoudi@gmail.com</a>
+                            <a href="mailto:najima.guermoudi@gmail.com"><img class="img-fluid" src="assets/path4466.svg" width="40" height="40"  alt="">najima.guermoudi@gmail.com</a>
                         </div>
                         <div class="phone">
-                            <a href="tel:+33635491860"><img src="assets/icon-tel-v.svg" alt="" width="40" height="40">06 35 49 18 60</a>
+                            <a href="tel:+33635491860"><img class="img-fluid" src="assets/icon-tel-v.svg" alt="" width="40" height="40">06 35 49 18 60</a>
                         </div>
                         <div class="network">
-                            <a href="https://www.linkedin.com/in/n-guer/" target="_blank"><img src="assets/Path_2520.svg" width="40" height="40" alt="">Profil LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/n-guer/" target="_blank"><img class="img-fluid" src="assets/Path_2520.svg" width="40" height="40" alt="">Profil LinkedIn</a>
                             <div class="print">
                                 <img src="assets/Path_2520.svg" width="40" height="40" alt=""><p>linkedin.com/in/n-guer/</p>
                             </div>
                         </div>
                         <div class="github">
-                            <a href="https://github.com/divineion" target="_blank"><img src="assets/github-mark.svg" width="40" height="40" alt="silhouette de chat blanc sur fond circulaire coloré" title="logo de Github">Profil Github</a>
+                            <a href="https://github.com/divineion" target="_blank"><img class="img-fluid" src="assets/github-mark.svg" width="40" height="40" alt="silhouette de chat blanc sur fond circulaire coloré" title="logo de Github">Profil Github</a>
                             <div class="print">
                                 <img src="assets/github-mark.svg" width="40" height="40" alt="silhouette de chat blanc sur fond circulaire coloré"><p>https://github.com/divineion</p>
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div> 
             </main>
         </div>
+
     </body>
 </html>

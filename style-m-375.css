@@ -1,140 +1,139 @@
-@media screen and (max-width: 375px){
+/****STYLESHEET A RENOMMER**********/
 
-    :root {
-        font-family: 'Work Sans', sans-serif;
-        font-size: 1rem;
-        --violettext : rgb(62, 49, 79);
-        --violetbg : rgb(98, 84, 115);
-    }
+@media screen and (max-width: 862px) {
+  :root {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    --violettext: rgb(62, 49, 79);
+    --violetbg: rgb(98, 84, 115);
+  }
 
+ body {
+    width: 100svw;
+    font-size: 1.4em;
+  }
 
-    body {
-        width: 100svw;        
-        font-size: 1.4em;
-    }
-
-    #view {
-        width: 100svw;
-        box-sizing: border-box;
-        padding: 1.875rem;
-    }
-    
-    header {
-        display: flex;
-        flex-direction: column;
-        padding: 0 0 1.5625rem 0;
-    }
+  #view {
+    box-sizing: border-box;
+    padding: 1.875rem;
+  }
 
 
-    .animation {
-        font-size: 1.5rem;
-    }
+  header {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1.5625rem 0;
+  }
+    /*
+  .animation {
+    font-size: 1.5rem;
+  }
 
-    .header-top-left {
-        width: 100%;
-        padding-bottom: 3.125rem;
-    }
+  .header-top-left {
+    width: 100%;
+    padding-bottom: 3.125rem;
+  }
 
-    .header-left {
-        display: none;
-    }
+  .header-left {
+    display: none;
+  }
 
-    .header-right {
-        padding: 1.3rem 0 0 0;
-    }
+  .header-right {
+    padding: 1.3rem 0 0 0;
+  }
 
-    .header-right>p:first-of-type {
-        display: none;
-    }
+  .header-right > p:first-of-type {
+    display: none;
+  }
 
-    .competences {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+  .competences {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .formation {
-        display: block;
-    }
+  .formation {
+    display: block;
+  }
 
-    .formation>div {
-        width: 100%;
-    }
+  .formation > div {
+    width: 100%;
+  }
 
-    .currently {
-        padding-bottom: 4rem;
-    }
+  .currently {
+    padding-bottom: 4rem;
+  }
 
-    .currently, .planned {
-        width: 90%;
-    }
-    
-    .parcours {
-        height: auto;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        height: auto;
-    }
+  .currently,
+  .planned {
+    width: 90%;
+  }
 
-    .parcours>div>p {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    
-    main {
-        flex-direction: row;
-        width: 100%;
-        padding: 1.5625rem 0 0 0;
-    }
-    
-    div.presentation {
-        padding-top: 60px;
-    }
+  .parcours {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
 
-    ul.menu>li:not(:nth-of-type(3)) {
-        display: none;
-    }
+  .parcours > div > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-    .header-top-right {
-        padding: 0;
-        display: none;
-    }
+  main {
+    flex-direction: row;
+    width: 100%;
+    padding: 1.5625rem 0 0 0;
+  }
 
-    #experience {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
+  div.presentation {
+    padding-top: 60px;
+  }
 
-    .experiences>div>p>a>img {
-        padding: .9375rem 0;
-    }
+  ul.menu > li:not(:nth-of-type(3)) {
+    display: none;
+  }
 
-    .experiences>div>p>a {
-        padding: 0;
-    }
+  .header-top-right {
+    padding: 0;
+    display: none;
+  }
 
-    .experiences>div>p>a>img {
-        filter: none;
-    }
-    
-    .experiences>div>p>a:first-of-type {
-        margin-left:  0;
-        padding-left: 0;
-    }
+  #experience {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 
-    .print-button {
-        display: none;
-    }
+  .experiences > div > p > a > img {
+    padding: 0.9375rem 0;
+  }
 
+  .experiences > div > p > a {
+    padding: 0;
+  }
 
+  .experiences > div > p > a > img {
+    filter: none;
+  }
 
-    .peu {
-        display: flex;
-        flex-direction: column;
-    }
+  .experiences > div > p > a:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+  }
 
-    h1, h2 {
-        color: initial; 
-    }
-    
-} 
+  .print-button {
+    display: none;
+  }
+
+  .peu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h1,
+  h2 {
+    color: initial;
+  }
+ */
+}

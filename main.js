@@ -1,4 +1,10 @@
-const anim = document.querySelector(".animation");
+// window.addEventListener('load', () => {
+//   const body = document.querySelector('body');
+//   const loader = document.querySelector('.loader');
+//   body.replaceChildren(loader);
+// })
+
+const anim = document.querySelector('.animation');
 const splitText = anim.textContent.split("");
 anim.innerHTML = "";
 i = 0;
@@ -12,7 +18,6 @@ function lettreSupp() {
   }
 }
 
-//délimiter le viewport
 function isInViewport(element) {
   var rect = element.getBoundingClientRect();
   return (

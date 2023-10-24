@@ -1,7 +1,6 @@
 <template>
     <header class="top">
         <div class="header-top-right">
-<p>HEADER</p>
         </div>
     </header>
 </template>
@@ -12,6 +11,3 @@ export default {
     name: 'AppHeader'
 }
 </script>
-
-<style>
-</style>

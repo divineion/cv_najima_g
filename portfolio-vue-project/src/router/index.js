@@ -4,7 +4,6 @@ import Contact from '../views/Contact.vue'
 import AppHeaderVue from '../components/AppHeader.vue'
 import AppFooterVue from '../components/AppFooter.vue'
 import ContactVue from '../views/Contact.vue'
-import ExperienceVue from '../views/Experience.vue'
 import PresentationVue from '../views/Presentation.vue'
 
 const router = createRouter({
@@ -26,11 +25,6 @@ const router = createRouter({
       component: () => import('../views/Contact.vue')
     },
     {
-      path: '/Experience',
-      name: 'experience',
-      component: () => import('../views/Experience.vue')
-    },
-    {
       path: '/Skills',
       name: 'competences',
       component: () => import('../views/Skills.vue')
@@ -44,11 +38,6 @@ const router = createRouter({
       path: '/Presentation',
       name: 'presentation',
       component: () => import('../views/Presentation.vue')
-    },
-    {
-      path: '/Formation',
-      name: 'formation',
-      component: () => import('../views/Formation.vue')
     },
     {
       path: '/Parcours',

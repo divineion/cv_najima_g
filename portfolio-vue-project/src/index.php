@@ -5,68 +5,66 @@ header("Access-Control-Allow-Headers: Content-Type");
 
 require '../config.php';
 require '../vendor/autoload.php';
-require '../vendor/phpmailer/phpmailer/src/Exception.php';
-require '../vendor/phpmailer/phpmailer/src/PHPMailer.php';
-require '../vendor/phpmailer/phpmailer/src/SMTP.php';
+
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 
-    // récupérer les data d'axios
-    $postData = file_get_contents('php://input');
+// récupérer les data d'axios
+$postData = file_get_contents('php://input');
 
-    // Convertir les données JSON en un tableau associatif
-    $postData = json_decode($postData, false);
-    if ($postData !== null) {
-        $username = $postData->username;
-        $firstname = $postData->firstname;
-        $useremail = $postData->email;
-        $message = $postData->message;
+// Convertir les données JSON en un tableau associatif
+$postData = json_decode($postData, false);
 
-//Create an instance; passing `true` enables exceptions
-$mail = new PHPMailer(true);
+if ($postData !== null) {
+    $username = $postData->username;
+    $firstname = $postData->firstname;
+    $useremail = $postData->email;
+    $message = $postData->message;
 
-try {
-    //Paramétrage du serveur SMTP
-    $mail->SMTPDebug = SMTP::DEBUG_OFF;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'mail.gmx.com';                       //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //SMTP authentication
-    $mail->Username   = 'dev.web.najima@gmx.com';             //SMTP username
-    $mail->Password   = pwd;                                    //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    //Create an instance; passing `true` enables exceptions
+    $mail = new PHPMailer(true);
 
-    //Recipients
-    $mail->setFrom('dev.web.najima@gmx.com');
-    $mail->addAddress('dev.web.najima@gmx.com');              //Add a recipient
-    //$mail->addAddress('ellen@example.com');                   //Name is optional
-    $mail->addReplyTo($useremail);
+    try {
+        //Paramétrage du serveur SMTP
+        $mail->SMTPDebug = SMTP::DEBUG_OFF;                      //Enable verbose debug output
+        $mail->isSMTP();                                            //Send using SMTP
+        $mail->Host       = 'grey.o2switch.net';                       //Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   //SMTP authentication
+        $mail->Username   = 'divineion@guna5089.odns.fr';             //SMTP username
+        $mail->Password   = pwd;                                    //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+        $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
-    //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Contact depuis votre site';
-    $mail->Body    = $message;
+        //Recipients
+        $mail->setFrom('divineion@guna5089.odns.fr');
+        $mail->addAddress('divineion@guna5089.odns.fr');              //Add a recipient
+        //$mail->addAddress('ellen@example.com');                   //Name is optional
+        $mail->addReplyTo($useremail);
 
-    $sent = $mail->send();
-    if ($sent) {
-        $response = array(
-            'status' => 'success',
-            'message' => 'Message sent successfully'
-        );
-    } else {
-        $response = array(
-            'status' => 'error',
-            'message' => 'Message could not be sent'
-        );
+        //Content
+        $mail->isHTML(true);                                  //Set email format to HTML
+        $mail->Subject = 'Contact depuis votre site';
+        $mail->Body    = $message;
+
+        $sent = $mail->send();
+        if ($sent) {
+            $response = array(
+                'status' => 'success',
+                'message' => 'Message sent successfully'
+            );
+        } else {
+            $response = array(
+                'status' => 'error',
+                'message' => 'Message could not be sent'
+            );
+        }
+        echo json_encode($response);
+        return;
+    } catch (Exception $e) {
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
-    echo json_encode($response);
-    return;
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-}
-
 ?>
